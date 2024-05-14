@@ -1,8 +1,8 @@
 export default function About( props ){
     let justImg2 = props.allImg2;
     return(
-        <div className="aboutPage homePage">
-            <h1>about $pepe</h1>
+        <div className="aboutPage">
+            <h2>about $pepe</h2>
             <div className="aboutPic">
                 <span>
                     <img src={justImg2.pepeR2} alt="pepe on a rock 2"/>
@@ -16,7 +16,7 @@ export default function About( props ){
                     rock in the ever-changing crypto terrain
                 </h4>
             </div>
-            <h2>HOW TO BUY</h2>
+            <h3>HOW TO BUY</h3>
             <span className="blobAll">
                 <img src={justImg2.blob} alt="steps on how to buy"/>
             </span>

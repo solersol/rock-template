@@ -4,8 +4,8 @@ export default function Contact( props ){
     let justImg = props.allImg;
 
     return(
-        <div className="contactPage homePage">
-            <h1>Contact</h1>
+        <div className="contactPage">
+            <h2>Contact</h2>
             <div className="socialPulic">
                 <span>
                     <img src={justImg4.dt} alt="Dexstool"/>

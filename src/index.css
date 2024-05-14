@@ -57,15 +57,14 @@ h1, h2, h3, h4, h5, h6{
   font-family: var(--fontFamily-Rubik);
   color: var(--bar-color-light);
 }
-h1{
+h1, h2{
   font-size: 45px;
   text-align: center;
   text-transform: uppercase;
   text-shadow: var(--text-shadow);
-  margin-bottom: 1rem;
-  margin-top: 2.5rem;
 }h2{
-  font-size: 35px;
+  margin-top: 1rem;
+  font-size: 45px;
 }h3{
   font-size: 30px;
 }h4{
@@ -113,8 +112,8 @@ body{
   background: var(--body-color-red);
   width: 100%;
 }
-.homePage{
-  padding: 1.5rem 0 1.5rem 0;
+.AllPage{
+  padding: 4.5rem 0 1rem 0;
 }
 .homePage nav{
   display: flex;
@@ -163,7 +162,7 @@ body{
   pointer-events: none;
 }
 .homePage .homeTextPic{
-  padding: 1rem 0 1rem 1rem;
+  padding: 0;
 }
 .homePage .homeTextPic{
   display: flex;
@@ -244,10 +243,8 @@ body{
   width: 550px;
   height: 550px;
 }
-.aboutPage h2{
-  text-align: start;
-  margin-left: 6rem;
-  text-shadow: var(--text-shadow);
+.aboutPage h3{
+  margin-left: 4rem;
 }
 .aboutPage .blobAll{
   position: relative;
@@ -292,6 +289,7 @@ body{
   justify-content: center;
   position: relative;
   align-items: center;
+  margin-left: 1rem;
 }
 .rmBox img{
   width: 900px;
@@ -350,10 +348,9 @@ body{
     line-height: 35px;
   }
   h1{
-    font-size: 35px;
-    margin-bottom: 4rem;
+    font-size: 45px;
   }h2{
-    font-size: 23px;
+    font-size: 35px;
   }h3{
     font-size: 25px;
   }h4{
@@ -386,12 +383,16 @@ body{
     width: 400px;
     height: 400px;
   }
+  .aboutPage .aboutPic{
+    margin-bottom: 5rem;
+    margin-top: 4rem;
+  }
   .aboutPic img{
     width: 400px;
     height: 400px;
   }
   .aboutPage h4{
-    width: 40%;
+    width: 60%;
     text-align: center;
   }
 }
@@ -444,12 +445,12 @@ body{
     grid-template-columns: 1fr;
   }
   .AllocatePic img{
-    margin-top: 2rem;
+    margin-top: 3rem;
     width: 500px;
     height: 500px;
   }
   .rmBox img{
-    width: 80%;
+    width: 95%;
   }
   .contactPage .socialPulic{
     padding: 0 1rem;
@@ -475,6 +476,15 @@ body{
   }
 }
 @media screen and (max-width: 800px){
+  .AllPage{
+    padding-top: 2.5rem;
+  }
+  h1{
+    margin-top: 0rem;
+  }
+  .homePage{
+    padding: 0.4rem 0 1.5rem 0;
+  }
   .homePage nav{
     justify-content: space-between;
     padding: 8px 5rem;
@@ -557,4 +567,60 @@ body{
     bottom: 0;
     transform: rotate(-135deg);
   }
+}
+@media screen and (max-width: 580px){
+  h1{
+    font-size: 45px;
+  }h2{
+    font-size: 35px;
+    margin-bottom: 1rem;
+  }h3{
+    font-size: 25px;
+  }h4{
+    font-size: 20px;
+  }
+  .homePage nav{
+    padding: 8px 2rem;
+  }
+  .tokenPage .AllP{
+    width: 140px;
+    height: 100px;
+    margin: 1rem 0;
+  }
+  .rmPage .rmBox{
+    margin-left: 1rem;
+  }
+  .AllocatePic div{
+    margin-top: 1rem;
+  }
+  .AllocatePic img{
+    width: 80%;
+    height: fit-content;
+  }
+  .socialPulic span img{
+    width: 220px;
+    height: 40px;
+  }
+  .contactPage  .socialPrivate{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 0 1rem;
+  }
+  .socialPrivate img{
+    width: 90px;
+    height: 90px;
+  }
+  .socialPrivate .allSocHandle{
+    display: flex;
+    margin-top: 1.2rem;
+  }
+  .contactPage .footText{
+    padding: 0 1rem;
+  }
+  .footText p{
+    font-size: 18px;
+  }
+
 }
