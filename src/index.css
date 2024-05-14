@@ -585,6 +585,15 @@ body{
   .homePage nav{
     padding: 8px 2rem;
   }
+  .homeText .allSC-Btn{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+  .allSC-Btn button{
+    width: fit-content;
+    margin: 0.5rem 0 1rem 0;
+  }
   .homeText p{
     overflow: hidden;
   }
