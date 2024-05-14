@@ -379,6 +379,9 @@ body{
     font-size: 65px;
     line-height: 10px;
   }
+  .homeTextPic .homePic{
+    width: fit-content;
+  }
   .homePic img{
     width: 400px;
     height: 400px;
@@ -581,6 +584,9 @@ body{
   }
   .homePage nav{
     padding: 8px 2rem;
+  }
+  .homeText p{
+    overflow: hidden;
   }
   .tokenPage .AllP{
     width: 140px;

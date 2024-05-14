@@ -13,7 +13,7 @@ const Home = ( props ) => {
                     </h4>
                     <p>
                         CA:
-                        0000000000000000000000000000000000000000000
+                        0000000000000000000000000000000000000000000122
                     </p>
                     <div className="allSC-Btn">
                         <button>Buy $PEPER</button>
