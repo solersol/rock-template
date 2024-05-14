@@ -481,10 +481,6 @@ body{
   }
   .homePage nav ul{
     display: none;
-    pointer-events: none;
-  }
-  .homePage nav ul{
-    display: none;
     pointer-events: all;
     background: var(--body-color-red);
     position: absolute;
@@ -495,6 +491,7 @@ body{
     padding: 1rem 2rem 0 2rem;
     border-left: 1px solid white;
     box-shadow: var(--box-shadow);
+    transition: var(--tran-06);
   }
   .homePage nav ul li{
     margin: 0.4rem 0;
@@ -511,6 +508,10 @@ body{
   .homePage nav ul li h3{
     text-align: center;
   }
+  .homePage nav .menuOptionActive{
+    display: block;
+    pointer-events: all;
+  }
   .homePage nav button{
     display: none;
     pointer-events: none;
@@ -523,6 +524,7 @@ body{
     background: var(--bar-color-light);
     position: relative;
     border-radius: 10px;
+    transition: var(--tran-06);
   }
   .homePage nav .menuBtn::before{
     content: "";
@@ -532,6 +534,7 @@ body{
     top: 10px;
     position: absolute;
     border-radius: 10px;
+    transition: var(--tran-06);
   }
   .homePage nav .menuBtn::after{
     content: "";
@@ -541,9 +544,17 @@ body{
     bottom: 10px;
     position: absolute;
     border-radius: 10px;
+    transition: var(--tran-06);
   }
-  .homePage nav .menuBtn:nth-child(n){
+  .homePage nav .menuBtnActive:nth-child(n){
     background: transparent;
   }
-
+  .homePage nav .menuBtnActive::before{
+    top: 0;
+    transform: rotate(135deg);
+  }
+  .homePage nav .menuBtnActive::after{
+    bottom: 0;
+    transform: rotate(-135deg);
+  }
 }
